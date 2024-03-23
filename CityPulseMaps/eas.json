@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 7.3.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_GOOGLE_API_KEY": "YOUR_API_KEY"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "image": "latest"
+      },
+      "env": {
+        "EXPO_PUBLIC_GOOGLE_API_KEY": "YOUR_API_KEY"
+      },
+      "distribution": "internal"
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_GOOGLE_API_KEY": "YOUR_API_KEY"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
